@@ -1,0 +1,55 @@
+header,.wrapper,footer{
+    width: 90%;
+    margin: 20px auto;
+}
+header{
+    margin: 20px auto;
+}
+header nav {
+    border-radius: 10px;
+    background: #F2B825;
+    overflow: hidden;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  
+}
+
+header nav ul li a:hover{
+    background: #F2B825;
+    color:#050500;
+}
+
+footer{
+    clear: both;
+    background:#646668;
+    text-align: center;
+    padding: 2% 0%;
+    border-radius: 10px;
+    color: white;
+}
+
+.foo{
+    display: flex;
+    justify-content: center;
+}
+
+.foo .foohijo{
+    width: 30%;
+    text-align: left;
+}
+
+.foo .foohijo img{
+    display: inline-block;
+    margin-top: 2%;
+}

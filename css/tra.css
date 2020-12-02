@@ -1,0 +1,135 @@
+table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          max-width: 100%;
+          padding:300px;  
+          background-color: rgb(247, 139, 39);
+}
+h1{
+  text-align: center;
+  
+}      
+td, th {
+  border:5px solid #fcfcfc;
+  text-align: left;
+  padding: 60px;
+  width: 60;
+}
+        
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+        
+section {
+  font-family: 'Playball', cursive;
+  background-color: rgb(224, 224, 224);
+  max-width: 100%;
+  display:inline-block;
+  padding:51px;   
+  height:auto; 
+  text-justify: auto;
+  color:rgb(7, 7, 7);    
+}
+#se1 {
+  font-family: 'Playball', cursive;
+   background-color: rgb(247, 139, 39);
+    width:100%;
+    display:inline-block;
+    padding:5px;    
+    text-justify:auto;
+    color:rgb(31, 31, 31);    
+}
+#se2 {
+  
+  background-color: rgb(224, 224, 224);
+  max-width: 100%;
+  padding: 5px; 
+  text-justify: auto;
+  color:rgb(7, 7, 7);    
+}
+#logonormal {
+  max-width: 100px;
+  height: 100px;            
+}
+                       
+#logo {
+  width: 15%;
+  height: 15%;
+     
+              
+}
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 150%;
+  margin-left: -50px;
+}
+  
+      h4{
+        text-align: center;
+        color: black;
+        
+      }
+      h5{
+        text-align: center;
+        color: rgb(27, 27, 27);
+        
+      }
+
+      #menu {
+        
+        float:left;
+        height:550px;
+        padding-left: 20px;
+        width:180px;
+      }
+      #m1{
+  
+        float:left;
+        height:480px;
+        padding-left: 150px;
+        width:180px;
+      }
+
+      #m2{
+  
+        float:left;
+        height:480px;
+        padding-left: 170px;
+        width:180px;
+      }
+      
+      #m3{
+  
+        float:left;
+        height:480px;
+        padding-left: 150px;
+        width:200px;
+      }
+      /*Encabezado de galeria*/
+      #galeria header {
+        -webkit-column-span:all;
+        column-span:all;
+      }
+      /* Móviles en horizontal o tablets en vertical */
+      @media (max-width: 767px) { 
+        #galeria {
+          columns:2;
+        }
+    
+      }
+      /* Móviles en vertical */
+      @media (max-width: 480px) {
+        #galeria {
+          columns: 1;
+        }
+      }

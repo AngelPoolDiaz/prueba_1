@@ -1,0 +1,200 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*Estilo de la cabecera:*/
+
+#main-header {
+	background: #F2B825;
+	color: white;
+	height: 80px;
+	opacity: 1;
+	flex-flow: column;
+}	
+	#main-header a {
+		color: white;
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+/*Con estos estilos aplicaremos diseño al contenido:*/
+
+#main-content {
+	background: white;
+	width: 100%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
+/*Definir el pie de página:*/
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+	/*galeria configuraciones de pagina*/
+
+	#galeria {
+		margin: 1rem auto;
+		width:100%;
+		max-width:960px;
+		padding:0 20px 20px;
+		box-sizing: border-box;
+		column-count: 3;
+
+		/* Espacio entre columnas */
+		-moz-column-gap: 20px;
+		-webkit-column-gap: 20px;
+		column-gap: 20px;
+		
+		/* linea entre columnas */
+		-moz-column-rule: 1px solid #bbb;
+		-webkit-column-rule: 1px solid #bbb;
+		column-rule: 1px solid #bbb;
+	}
+	/*Encabezado de galeria*/
+	#galeria header {
+		-webkit-column-span:all;
+		column-span:all;
+	}
+	/* Móviles en horizontal o tablets en vertical */
+	@media (max-width: 767px) { 
+		#galeria {
+			columns:2;
+		}
+
+	}
+	/* Móviles en vertical */
+	@media (max-width: 480px) {
+		#galeria {
+			columns: 1;
+		}
+	}
+	/**/
+	/*************/
+	/*Iniciamos la parte de la galeria y sus configuraciones para la opciones de boton*/	  
+	  .galeria {
+		height: calc( 300px + 3em);
+		width: 300px;
+		margin: 1em auto;
+		border: 1px solid #F2B825;
+		position: relative;  
+	  }
+	  
+	  .galeria img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 3s;
+	  }
+	  
+	  .galeria input[type=radio] {
+		position: relative;
+		bottom: calc(-300px - 1.5em);
+		left: .5em;
+	  }
+	  
+	  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+		opacity: 1;
+	  }
+	  
+	  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+		opacity: 1;
+	  }
+	  
+	  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+		opacity: 1;
+	  }
+	  
+	  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+		opacity: 1;
+	  }

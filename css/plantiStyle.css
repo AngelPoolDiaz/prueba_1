@@ -1,0 +1,85 @@
+.header{
+    padding: 30px;
+    text-align: center;
+    background: #beb7b7;
+}
+.space{
+    padding: 50px;
+    background: #f6f6f6;
+    text-align: center;
+}
+.contenedor{
+    padding: auto;
+    background: #f6f6f6;
+    display: grid;
+    grid-template-columns: repeat(3, 300px) ;
+    grid-template-rows: repeat(2, 315px);
+    grid-gap: 100px 70px;
+    grid-template-areas: "a b c" 
+                         "d e f";
+    text-align: center;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+} 
+.a{
+    grid-area: a;
+    background: #f6f6f6;
+    border: 1px black solid;
+}
+.img{
+    width: 100%;
+    height: auto;
+   
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.b{
+    grid-area: b;
+    background: #f6f6f6;
+    border: 1px black solid;
+}
+.c{
+    grid-area: c;
+    background: #f6f6f6;
+    border: 1px black solid;
+}
+.d{
+    grid-area: d;
+    background: #f6f6f6;
+    border: 1px black solid;
+}
+.e{
+    grid-area: e;
+    background: #f6f6f6;
+    border: 1px black solid;
+}
+.f{
+    grid-area: f;
+    background: #f6f6f6;
+    border: 1px black solid;
+}
+.row::after{
+    content: "";
+    display: grid;
+    clear: both;
+}
+
+/*buscador flotante*/
+*{
+    box-sizing: border-box;
+}
+.buscador{
+    display: block;
+    position: fixed;
+    
+    top: 84%;
+    width: 50%;
+    height: 50%;
+    bottom: 0%;
+    left: 25%;
+}
+
